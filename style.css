@@ -120,7 +120,7 @@
 section {
   padding: 100px 0;
 }
-.about, .timeline, .skills{
+.about, .timeline, .skills, .projects, .glassbody{
   font-family: "Poppins", sans-serif;
 }
 
@@ -347,6 +347,124 @@ section .title::after {
 .skills .skills-content .right .xd::before{
   width: 40%;
 }
+
+
+/* experiment */
+.projects{
+  background: #161623;
+  color: #fff;
+}
+.projects .title::before{
+  background: #fff;
+}
+
+.projects .title::after{
+  background: #111;
+  content: "What I have made";
+}
+.glassbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #161623;
+  width: 100%;
+}
+.glassbody::before {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(30% at right 80%);
+}
+.glassbody::after {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(20% at 10% 10%);
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.container .glass {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.5);
+}
+.container .glass .glass-content {
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 1;
+  transition: 0.5s;
+}
+.container .glass:hover .glass-content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.container .glass .glass-content h2 {
+  position: absolute;
+  top: -90px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  font-weight: 900;
+}
+.container .glass .glass-content h3 {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+  font-weight: 500;
+}
+.container .glass .glass-content p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+.container .glass .glass-content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 10px;
+  margin-top: 15px;
+  background: crimson;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.container .glass .glass-content a:hover{
+  color: crimson;
+  background: none;
+  font-weight: 500;
+  font-size: 30px;
+}
+
 
 
 /*responsiveness*/
