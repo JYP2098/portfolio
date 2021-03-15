@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jay Patel</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Port<span>lio.</span></a></div>
+            <div class="logo"><a href="#home">Port<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Timeline</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#timeline" class="menu-btn">Timeline</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -33,7 +37,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Jay Patel</div>
-                <div class="text-3">And I am a <span>designer</span></div>
+                <div class="text-3">And I am a <span class="typing"></span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -48,7 +52,7 @@
                     <img src="img/me.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I am Jay and I am a <span>designer</span></div>
+                    <div class="text">I am Jay and I am a <span class="typing-2"></span></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quia ab maxime, omnis consequatur odit incidunt optio, voluptatem, quisquam dolorem nemo! Maxime obcaecati nisi voluptatibus, voluptatum at quibusdam fuga quos dolorum ducimus reprehenderit reiciendis incidunt earum, rem ab? Dolorem tempora modi velit quos! Eum, id facere cupiditate quisquam quibusdam delectus animi vitae aliquid doloribus ullam totam quasi ea incidunt fugit?</p>
                     <a href="pdf/Resume-Jay Patel.pdf">Download CV</a>
                 </div>
@@ -179,6 +183,18 @@
         </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <h1>Want to Leave me a message?</h1>
+	        <p><a href="mailto:pateljay2098@gmail.com"  target="_blank">Send the Raven</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <span>Created by Jay Patel | <span class="far fa-copyright"></span>2021</span>
+    </footer>
 
     <script src="script.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
