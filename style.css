@@ -6,11 +6,11 @@
   text-decoration: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.scroll-up-btn{
+.scroll-up-btn {
   position: fixed;
   height: 45px;
   width: 42px;
@@ -29,7 +29,7 @@ html{
   transition: all 0.3s ease;
 }
 
-.scroll-up-btn.show{
+.scroll-up-btn.show {
   opacity: 1;
   pointer-events: auto;
   bottom: 30px;
@@ -148,7 +148,13 @@ html{
 section {
   padding: 100px 0;
 }
-.about, .timeline, .skills, .projects, .glassbody, .contact, footer{
+.about,
+.timeline,
+.skills,
+.projects,
+.glassbody,
+.contact,
+footer {
   font-family: "Poppins", sans-serif;
 }
 
@@ -184,11 +190,13 @@ section .title::after {
   transform: translateX(-50%);
 }
 
-.about .title::after{
+.about .title::after {
   content: "who am I";
 }
 
-.about .about-content, .timeline .time-content, .skills .skills-content {
+.about .about-content,
+.timeline .time-content,
+.skills .skills-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -242,21 +250,21 @@ section .title::after {
   background: none;
 }
 
-.timeline{
+.timeline {
   color: #fff;
   background: #111;
 }
 
-.timeline .title::before{
+.timeline .title::before {
   background: #fff;
 }
 
-.timeline .title::after{
+.timeline .title::after {
   background: #111;
   content: "My journey";
 }
 
-.timeline .time-content .card{
+.timeline .time-content .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
@@ -266,53 +274,53 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.timeline .time-content .card i{
+.timeline .time-content .card i {
   font-size: 50px;
   color: crimson;
   transition: color 0.3s ease;
 }
 
-.timeline .time-content .card .box{
+.timeline .time-content .card .box {
   transition: all 0.3s ease;
 }
 
-.timeline .time-content .card:hover{
+.timeline .time-content .card:hover {
   background: crimson;
 }
 
-.timeline .time-content .card:hover i{
+.timeline .time-content .card:hover i {
   color: #fff;
 }
 
-.timeline .time-content .card:hover .box{
+.timeline .time-content .card:hover .box {
   transform: scale(1.05);
 }
 
-.timeline .time-content .card .text{
+.timeline .time-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-.skills .title::after{
+.skills .title::after {
   content: "what I know";
 }
 
-.skills .skills-content .column{
+.skills .skills-content .column {
   width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text{
+.skills .skills-content .left .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.skills .skills-content .left p{
+.skills .skills-content .left p {
   text-align: justify;
 }
 
-.skills .skills-content .left a{
+.skills .skills-content .left a {
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -325,68 +333,67 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover{
+.skills .skills-content .left a:hover {
   color: crimson;
   background: none;
 }
 
-.skills .skills-content .right .bars{
+.skills .skills-content .right .bars {
   margin-bottom: 15px;
 }
 
-.skills .skills-content .right .infor{
+.skills .skills-content .right .infor {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
   justify-content: space-between;
 }
 
-.skills .skills-content .right span{
+.skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
 }
 
-.skills .skills-content .right .line{
+.skills .skills-content .right .line {
   height: 5px;
   width: 100%;
   background: lightgray;
   position: relative;
 }
 
-.skills .skills-content .right .line::before{
+.skills .skills-content .right .line::before {
   content: "";
   position: absolute;
-  
+
   height: 100%;
   left: 0;
   top: 0;
   background: crimson;
 }
 
-.skills .skills-content .right .html::before{
+.skills .skills-content .right .html::before {
   width: 70%;
 }
-.skills .skills-content .right .css::before{
+.skills .skills-content .right .css::before {
   width: 70%;
 }
-.skills .skills-content .right .js::before{
+.skills .skills-content .right .js::before {
   width: 60%;
 }
-.skills .skills-content .right .xd::before{
+.skills .skills-content .right .xd::before {
   width: 40%;
 }
 
-
 /* experiment */
-.projects{
+.projects {
   background: #161623;
   color: #fff;
 }
-.projects .title::before{
+.projects .title::before {
   background: #fff;
 }
 
-.projects .title::after{
+.projects .title::after {
   background: #111;
   content: "What I have made";
 }
@@ -399,7 +406,6 @@ section .title::after {
   width: 100%;
 }
 .glassbody::before {
-  
   position: absolute;
   top: 0;
   left: 0;
@@ -409,7 +415,6 @@ section .title::after {
   clip-path: circle(30% at right 80%);
 }
 .glassbody::after {
-  
   position: absolute;
   top: 0;
   left: 0;
@@ -486,21 +491,21 @@ section .title::after {
   text-decoration: none;
   font-weight: 500;
 }
-.container .glass .glass-content a:hover{
+.container .glass .glass-content a:hover {
   color: crimson;
   background: none;
   font-weight: 500;
   font-size: 30px;
 }
 
-.contact .title::after{
+.contact .title::after {
   content: "Reach me by";
 }
 
-.contact h1{
+.contact h1 {
   text-align: center;
 }
-.contact p{
+.contact p {
   text-align: center;
   font-size: 25px;
 }
@@ -521,10 +526,34 @@ section .title::after {
   background: none;
 }
 
-footer{
+footer {
   background: #111;
   padding: 20px 23px;
   color: #fff;
+  font-size: 20px;
+}
+footer a {
+  padding-left: 20px;
+  display: inline-block;
+  justify-content: space-between;
+}
+.fa-dribbble:hover {
+  color: #ff69b4;
+}
+.fa-github:hover {
+  color: #8a2be2;
+}
+.fa-linkedin:hover {
+  color: #1e90ff;
+}
+.fa-instagram:hover {
+  color: #ffa500;
+}
+.fa-dribbble,
+.fa-github,
+.fa-linkedin,
+.fa-instagram {
+  transition: 0.2s;
 }
 
 /*responsiveness*/
@@ -602,11 +631,11 @@ footer{
   .max-width {
     max-width: 800px;
   }
-  .timeline .time-content .card{
+  .timeline .time-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-  .skills .skills-content .column{
+  .skills .skills-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
@@ -625,10 +654,10 @@ footer{
   .home .home-content a {
     font-size: 20px;
   }
-  .timeline .time-content .card{
+  .timeline .time-content .card {
     width: 100%;
   }
-  .skills .skills-content .column{
+  .skills .skills-content .column {
     width: 100%;
   }
 }
