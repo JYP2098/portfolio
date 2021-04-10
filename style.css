@@ -14,7 +14,7 @@ html {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: crimson;
+  background: black;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -50,7 +50,7 @@ html {
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: crimson;
+  background: black;
 }
 .navbar .max-width {
   display: flex;
@@ -63,7 +63,7 @@ html {
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: crimson;
+  color: black;
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
@@ -82,7 +82,7 @@ html {
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: crimson;
+  color: black;
 }
 .navbar.sticky .menu li a:hover {
   color: #fff;
@@ -97,7 +97,7 @@ html {
 
 .home {
   display: flex;
-  background: url("img/ds2crop.gif") no-repeat center;
+  background: url("img/back3.jpg") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -124,19 +124,19 @@ html {
 }
 
 .home .home-content .text-3 span {
-  color: crimson;
+  color: black;
   font-weight: 500;
 }
 
 .home .home-content a {
   display: inline-block;
-  background: crimson;
+  background: black;
   color: #fff;
   border-radius: 10px;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
-  border: 2px solid crimson;
+  border: 2px solid black;
   transition: all 0.3s ease;
 }
 
@@ -639,6 +639,10 @@ footer a {
     width: 100%;
     margin-bottom: 35px;
   }
+  .projects .glassbody .container .glass {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -658,6 +662,9 @@ footer a {
     width: 100%;
   }
   .skills .skills-content .column {
+    width: 100%;
+  }
+  .projects .glassbody .container .glass {
     width: 100%;
   }
 }
